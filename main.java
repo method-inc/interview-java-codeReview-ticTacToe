@@ -54,7 +54,6 @@ public class Main {
                     board[input - 1] = turn;
                     break;
                 } else {
-                    print("Cheater (≖_≖ )");
                     print("Try again");
                     input = scanner.nextInt();
                 }
@@ -77,7 +76,7 @@ public class Main {
             print("Congrats! " + players[1] + ", you win!!!");
             return true;
         } else if(checkWinner(board).equals("draw")) {
-            print("Damn, you guys suck :P");
+            print("Draw");
             return true;
         }
         return false;
